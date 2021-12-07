@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --violet:#6c5ce7;
+    --pink:#FC4278;
+    --gradient:linear-gradient(90deg, var(--violet), var(--pink))
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    overflow: scroll;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--gradient);
+    padding: 3rem 7%;
+    padding-bottom: 9rem;
+}
+
+section{
+    padding: 2rem 7%;
+   
+}
+
+.container{
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: var(--violet);
+    font-weight: bold;
+    margin-right: 250px;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+header .navbar a:hover{
+    color: white;
+    background-color: var(--pink);
+    border-radius: 6.5px;
+    border: 3.5px solid var(--pink);
+}
+
+#menu{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    cursor: pointer;
+    display: none;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--violet);
+    padding: .7rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: .7rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--pink);
+}
+.footer .box-container .box p i{
+    padding-right: .5rem;
+    color: var(--pink);
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: .2rem solid rgba(0,0,0,.1);
+    color: #666;
+}
+.footer .credit span{
+    color: var(--pink);
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .content img{
+    width: 100%;
+}
+
+.home .content h3{
+    color: transparent;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+.home .content p{
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #666;  
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--gradient);
+}
+
+
+.fa, .fas {
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media QUERIES*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding: 1.5rem;
+    }
+    header{
+        padding:2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top:.1rem solid rgba(0,0,0,.2);
+        border-bottom:.1rem solid rgba(0,0,0,.2);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        font-size: 2.5rem;
+        display: block;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 50%;
+    }
+}
+

@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2021, 10:52:55 AM
+    Author     : GWeb Solution PC 1
+*/
+
+.emergency{
+    position: absolute;
+    bottom: 27px;
+    z-index: 1;
+    background: #50c3ef;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.appoinment-content{
+    position: relative;
+}
+
+.appoinment-content img{
+    width: 100%;
+}
+
+.btn-main{
+    background: #50c3ef;
+}
+
+.error{
+    background: yellow;
+    color: red;
+    padding: 5px;
+}
+
+.success{
+    background: #50c3ef;
+    color: #fff;
+    padding: 5px;
+}
+
+
+/*jquery  ui datepicker*/

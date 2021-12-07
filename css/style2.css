@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --violet:#6c5ce7;
+    --pink:#FC4278;
+    --gradient:linear-gradient(90deg, var(--violet), var(--pink))
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--violet);
+}
+
+.welecome_text{
+    
+    width: 400px;
+}
+
+.welecome_form input,
+.welecome_form button{
+    display: block;
+    width: 100%;
+}
+
+.welecome_form input{
+    margin-bottom: 15px;
+    padding: 20px 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.welecome_form button{
+   
+    font-weight: 900;
+    padding: 13px 0;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+    border-radius: 100px;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.welecome_form button:hover{
+    transform: translateY(-5px);
+}
+
+.welecome_form input:focus,
+.welecome_form button:focus{
+    outline: none;
+}
+
+.quiz{
+    
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 60px auto;
+    background-color: white;
+    width: 800px;
+    height: 500px;
+}
+
+.quiz_header{
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0, 0.3);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.quiz_body{
+    background-color: #ecf0f1;
+    padding: 30px ;
+}
+
+.quiz_user{
+    display: flex;
+    align-items: center;
+    padding-left: 30px ;
+}
+
+.quiz_timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--violet);
+    color: white;
+    padding: 30px;
+}
+
+.option_group{
+    list-style: none;
+    margin: 30px 0;
+}
+
+.option{
+    background-color: white;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+}
+
+.option:hover{
+    cursor: pointer;
+    border: 1.5px solid var(--violet);
+}
+
+.btn-next{
+    background-color:var(--violet);
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 27px;
+    transition: 0.4s all ;
+
+}
+.btn-next:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--violet);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.3);
+}
+
+.active{
+    background-color: var(--violet);
+    color: #fff !important;
+}
+
+.award_icon{
+    font-size: 300px;
+    color: #fff;
+}
+
+.user_name,
+.user_points,
+.user_time{
+    color: #fff;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.wrapper h3{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 40px;
+    font-size: 40px;
+}
+.wrapper .quiz h3{
+    color: #fff;
+    display: flex;
+    
+    font-size: 10px;
+}
